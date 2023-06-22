@@ -12,20 +12,36 @@ int column;
 string p1 = "";
 string p2 = "";
 
+void gridFunction() {
+
+
+	cout << "    |    |    \n";
+	cout << " " << space[0][0] << "  | " << space[0][1] << "  | " << space[0][2] << " \n";
+	cout << "____|____|____\n";
+	cout << "    |    |    \n";
+	cout << " " << space[1][0] << "  | " << space[1][1] << "  | " << space[1][2] << " \n";
+	cout << "____|____|____\n";
+	cout << "    |    |    \n";
+	cout << " " << space[2][0] << "  | " << space[2][1] << "  | " << space[2][2] << " \n";
+	cout << "    |    |    \n";
+
+
+}
+
 void check_value() {
 
 	int digit;
 
 	if (token == 'x')
 	{
-		cout << p1 << " enter X";
+		cout << p1 << " enter X \n";
 		cin >> digit;
 
 	}
 
 	if (token == '0')
 	{
-		cout << p2 << " Enter 0";
+		cout << p2 << " Enter 0 \n";
 		cin >> digit;
 	}
 
@@ -91,7 +107,7 @@ void check_value() {
 		cout << "No empty space!" << '\n';
 		check_value();
 	}
-	gridFunction();
+	
 }
 
 bool gameCondition() {
@@ -114,25 +130,11 @@ bool gameCondition() {
 				}
 		}
 	}
-	tie = true;
-	return false;
+	
+	
 }
 
-void gridFunction() {
 
-
-	cout << "    |    |    \n";
-	cout << " " << space[0][0] << "  | " << space[0][1] << "  | " << space[0][2] << " \n";
-	cout << "____|____|____\n";
-	cout << "    |    |    \n";
-	cout << " " << space[1][0] << "  | " << space[1][1] << "  | " << space[1][2] << " \n";
-	cout << "____|____|____\n";
-	cout << "    |    |    \n";
-	cout << " " << space[2][0] << "  | " << space[2][1] << "  | " << space[2][2] << " \n";
-	cout << "    |    |    \n";
-
-
-}
 
 int main() {
 
